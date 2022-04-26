@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100&display=swap');
+
+
+*,*::before,
+::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    
+
+}
+
+.btn{
+    padding: 0.8rem 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5 ease;
+}
+
+
+.btn:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+
+
+.btn-red{
+    background-color:brown;
+    border:2px solid rgb rgb(255, 103, 76);
+    color: white;
+}
+
+.btn-blue{
+    background-color:blue;
+    border:2px solid  rgb(11, 50, 226);
+    color: white;
+}
+
+.btn-green{
+    background-color:green;
+    border:2px solid rgb rgb(40, 243, 21);
+    color: white;
+}
+
+.btn-close{
+    z-index:1003;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-close button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 1rem;
+    height:1rem;
+    font-weight: 900;
+    border-radius: 50%;
+    outline:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238,134,134,0.5);
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1001;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5sec ease;
+    visibility: hidden;
+    background-color: linear-gradient(90deg,
+    rgba(255,125,125,0.85)
+    rgba(125,125,255,0.5)
+    rgba(125,225,0.85));
+    transition:all 0.5 ease;
+}
+
+
+.overlay.show{
+    visibility: visible;
+}
+
+
+.model-content.show{
+    transform:translateY(0px);
+
+
+}
+.model-title{
+    padding:0rem;
+}
+
+.model-content{
+    padding: 1rem;
+    border-radius: 8px;
+    border:2px solid #c12042;
+    width:75%;
+    max-width:30rem;
+    margin:1rem auto;
+    transition:all 0.5s ease-in;
+    transform:translateY(-1000px);
+    position: relative;
+    z-index: 10002;
+    transition: all 0.5s eas-in;
+}
+
+
